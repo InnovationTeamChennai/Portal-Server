@@ -1,0 +1,19 @@
+
+{
+  "apps": [
+    {
+      "name": "ICUMedical_LifeShield_Portal",
+      "script": "./bin/www.js",
+	  "exec_mode": "cluster",
+      "instances": 2,
+      "autorestart": true,
+	  "listen_timeout":120000,
+	  "wait_ready":true,
+      "args":"-parallel 1",
+      "node_args": "--max_old_space_size=2048",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

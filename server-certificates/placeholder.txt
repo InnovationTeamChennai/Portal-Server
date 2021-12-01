@@ -1,0 +1,1 @@
+This folder is created to push the certificates for portal. Read the Installation guide and User guide for more information.
