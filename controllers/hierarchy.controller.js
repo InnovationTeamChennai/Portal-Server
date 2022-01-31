@@ -33,9 +33,9 @@ const Installation = models.installation;
 
 var AppConfig = require('../config/app-config')
 
-var GetPortalAppRegistartionInfo = require('./isas.server.controller').getPortalAppIdAndAppSecret
+var GetPortalAppRegistartionInfo = require('./isas.controller').getPortalAppIdAndAppSecret
 
-var PluginRoutes = require('./plugins.server.controller');
+var PluginRoutes = require('./plugins.controller');
 
 var logger = require('../utils/winston.utils').PortalLogs
 async function getHierarchyTree(req, res, next) {

@@ -27,7 +27,7 @@ Inc.,
 */
 const _ = require('lodash');
 var moment = require('moment');
-const models = require('../database');
+const models = require('../database/db-handler');
 var {validateApplicationWithIsasToken} = require('../controllers/users.server.controller')
 var { updateSessionExpiry, getUserSessionById, updateIsasAccessToken, checkUserPrivilegeAccess } = require('../controllers/common.server.controller');
 var AppConfig = require('../config/app-config')
